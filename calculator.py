@@ -1,4 +1,3 @@
-
 # https://github.com/newmanhw/lab11-RL-AS
 # Partner 1: Ryan Leitner
 # Partner 2: Aung Sett
