@@ -1,4 +1,7 @@
 
+# https://github.com/newmanhw/lab10-RL-AS
+# Partner 1: Ryan Leitner
+# Partner 2: Aung Sett
 
 import math
 

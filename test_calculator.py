@@ -1,5 +1,9 @@
 import unittest
 from calculator import *
+# https://github.com/newmanhw/lab10-RL-AS
+# Partner 1: Ryan Leitner
+# Partner 2: Aung Sett
+
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
