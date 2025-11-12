@@ -1,4 +1,4 @@
-
+from calculator import add, sub, mul, div, log, exp, hypotenuse, square_root
 import pytest
 import calculator
 import math
@@ -26,6 +26,15 @@ def test_log_invalid_base():
         calculator.log(-2, 8)
     with pytest.raises(ValueError):
         calculator.log(2, -8)
+ def test_hypotenuse(self):  # 3 assertions
+        self.assertAlmostEqual(hypotenuse(3, 4), 5.0)
+        self.assertAlmostEqual(hypotenuse(-3, 4), 5.0)
+        self.assertAlmostEqual(hypotenuse(0, 0), 0.0)
 
+    def test_sqrt(self):  # 3 assertions
+        self.assertAlmostEqual(square_root(4), 2.0)
+        self.assertAlmostEqual(square_root(9), 3.0)
+        with self.assertRaises(ValueError):
+            square_root(-1)
 if __name__ == "__main__":
     unittest.main()
