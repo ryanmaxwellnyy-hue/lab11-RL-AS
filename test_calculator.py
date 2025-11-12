@@ -1,4 +1,4 @@
-from calculator import add, sub, mul, div, log, exp, hypotenuse, square_root
+from calculator import add, subtract, mul, div, logarithm, exp, hypotenuse, square_root
 import pytest
 import calculator
 import math
@@ -8,24 +8,24 @@ def test_add():
     assert calculator.add(-1, 1) == 0
 
 def test_subtract():
-    assert calculator.sub(5, 3) == 2
-    assert calculator.sub(0, 4) == -4
+    assert calculator.subtract(5, 3) == 2
+    assert calculator.subtract(0, 4) == -4
 
 def test_divide_by_zero():
     with pytest.raises(ZeroDivisionError):
         calculator.div(5, 0)
 
 def test_logarithm():
-    assert math.isclose(calculator.log(10, 100), 2)
-    assert math.isclose(calculator.log(2, 8), 3)
+    assert math.isclose(calculator.logarithm(10, 100), 2)
+    assert math.isclose(calculator.logarithm(2, 8), 3)
 
 def test_log_invalid_base():
     with pytest.raises(ValueError):
-        calculator.log(1, 10)
+        calculator.logarithm(1, 10)
     with pytest.raises(ValueError):
-        calculator.log(-2, 8)
+        calculator.logarithm(-2, 8)
     with pytest.raises(ValueError):
-        calculator.log(2, -8)
+        calculator.logarithm(2, -8)
  def test_hypotenuse(self):  # 3 assertions
         self.assertAlmostEqual(hypotenuse(3, 4), 5.0)
         self.assertAlmostEqual(hypotenuse(-3, 4), 5.0)
