@@ -24,7 +24,13 @@ def sub(a, b):
 
 def mul(a, b):
     return a * b
-
+def div(a, b):
+    try:
+        if b == 0:
+            raise ZeroDivisionError("Cannot divide by zero.")
+        return a / b
+    except ZeroDivisionError as e:
+        raise e
 def log(a, b):
     if a <= 0 or b <= 0 or b == 1:
         raise ValueError("Logarithm domain error: a and b must be positive, and b cannot be 1.")
