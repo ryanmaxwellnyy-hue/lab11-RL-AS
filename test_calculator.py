@@ -25,7 +25,7 @@ def test_log_invalid_base():
     with pytest.raises(ValueError):
         calculator.log(-2, 8)
     with pytest.raises(ValueError):
-        calculator.log(2, -8)
+        calculator.log(2, -8
 
 if __name__ == "__main__":
     unittest.main()
