@@ -1,3 +1,7 @@
+# https://github.com/newmanhw/lab11-RL-AS
+# Partner 1: Ryan Leitner
+# Partner 2: Aung Sett
+
 from calculator import add, subtract, mul, div, logarithm, exp, hypotenuse, square_root
 import pytest
 import calculator
