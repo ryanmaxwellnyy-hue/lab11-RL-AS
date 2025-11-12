@@ -34,9 +34,9 @@ def div(a, b):
     except ZeroDivisionError as e:
         raise e
 def logarithm(a, b):
-    if a <= 0 or b <= 0 or b == 1:
-        raise ValueError("Logarithm domain error: a and b must be positive, and b cannot be 1.")
-    return math.log(a, b)
+    if a <= 0 or b <= 0 or a == 1:
+        raise ValueError("Invalid inputs: base and value must be positive, base cannot be 1.")
+    return math.log(b, a)
 
 def exp(a, b):
     return a ** b
