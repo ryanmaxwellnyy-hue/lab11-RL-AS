@@ -3,7 +3,7 @@
 # Partner 2: Aung Sett
 
 import math
-import unittes
+import unittest
 import calculator
 from calculator import add, subtract, mul, div, logarithm, exp, hypotenuse, square_root
 
