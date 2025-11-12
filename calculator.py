@@ -1,5 +1,4 @@
-
-# https://github.com/newmanhw/lab10-RL-AS
+# https://github.com/newmanhw/lab11-RL-AS
 # Partner 1: Ryan Leitner
 # Partner 2: Aung Sett
 
@@ -22,7 +21,7 @@ def hypotenuse(a, b):
 def add(a, b):
     return a + b
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 def mul(a, b):
@@ -34,10 +33,10 @@ def div(a, b):
         return a / b
     except ZeroDivisionError as e:
         raise e
-def log(a, b):
-    if a <= 0 or b <= 0 or b == 1:
-        raise ValueError("Logarithm domain error: a and b must be positive, and b cannot be 1.")
-    return math.log(a, b)
+def logarithm(a, b):
+    if a <= 0 or b <= 0 or a == 1:
+        raise ValueError("Invalid inputs: base and value must be positive, base cannot be 1.")
+    return math.log(b, a)
 
 def exp(a, b):
     return a ** b
