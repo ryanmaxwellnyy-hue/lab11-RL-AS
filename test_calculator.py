@@ -5,7 +5,7 @@
 import math
 import unittest
 import calculator
-from calculator import add, subtract, mul, div, logarithm, exp, hypotenuse, square_root
+from calculator import add, subtract, div, logarithm, hypotenuse, square_root
 
 
 class TestCalculator(unittest.TestCase):
